@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*Для IE7 box-sising не работает, для поддержки в IE7 необходимо скачать и подключить утилиту box-polifill*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font: 100%/1.5em Arail,Helvetica, sans-serif;
+    color: #000;
+}
+
+.conteiner {
+    background: #e2e2e2;
+    width: 90%;
+    margin: 0 auto;
+}
+/*12-столбцовая адаптивная сетка*/
+.conteiner .cols {
+    float: left;
+    margin:  0 0 1em;
+    padding: 0 1em;
+    background: #fd4;
+    text-align: center;
+}
+
+.conteiner .cols.col-1  { width: 8.333333333%;      }
+.conteiner .cols.col-2  { width: 16.66666666666667%;}
+.conteiner .cols.col-3  { width: 25%;               }
+.conteiner .cols.col-4  { width: 33.33333333333333%;}
+.conteiner .cols.col-5  { width: 41.66666666666667%;}
+.conteiner .cols.col-6  { width: 50%;               }
+.conteiner .cols.col-7  { width: 58.33333333333333%;}
+.conteiner .cols.col-8  { width: 66.66666666666666%;}
+.conteiner .cols.col-9  { width: 75%;               }
+.conteiner .cols.col-10 { width: 83.33333333333333%;}
+.conteiner .cols.col-11 { width: 91.66666666666666%;}
+.conteiner .cols.col-12 { width: 100%;              }
+
+/*clear fix*/
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+/* для IE6-7 */
+.row {
+    /*overflow: auto;*/
+    zoom: 1;
+}

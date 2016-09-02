@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 100%/1.5em Arail,Helvetica, sans-serif;
+    color: #000;
+}
+
+.conteiner {
+    background: #e2e2e2;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    width: 67.70833333333333%;
+    float: left;
+}
+
+aside {
+    background: #d1d1d1;
+    width: 31.45833333333333%;
+    float: right;
+}
+
+footer {
+    clear: both;
+}
+
